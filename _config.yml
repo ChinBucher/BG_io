@@ -6,14 +6,26 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: pangcunhong
+email: pangcunhong@foxmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+#网站的根路径
 baseurl: / # the subpath of your site, e.g. /blog
+#字符编码
 encoding: utf-8
+
+#分页
+#gems: [jekyll-paginate]
+#the number of articles on each page
+#paginate: 5
+#页的路径 page2->page3->page4...
+#paginate_path: "/post/page:num"
+
+
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
