@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pangcunhong</title>
+    <title>庞存洪</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
     <link>http://yourdomain.com//</link>
     <atom:link href="http://yourdomain.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Dec 2015 16:01:02 +0800</pubDate>
-    <lastBuildDate>Thu, 31 Dec 2015 16:01:02 +0800</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 13:40:30 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 13:40:30 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>begin</title>
+        <description>&lt;h1&gt; begin
+&lt;p&gt;begin, Cilick below to go to index:&lt;/p&gt;
+&lt;a href=&quot;/&quot;&gt;index&lt;/a&gt;
+</description>
+        <pubDate>Mon, 21 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://yourdomain.com//web-build/2016/03/21/begin.html</link>
+        <guid isPermaLink="true">http://yourdomain.com//web-build/2016/03/21/begin.html</guid>
+        
+        <category>github-page</category>
+        
+        <category>jekyll</category>
+        
+        <category>liquid</category>
+        
+        
+        <category>web-build</category>
+        
+      </item>
     
       <item>
         <title>hello jekyll</title>
