@@ -25,7 +25,7 @@ encoding: utf-8
 #paginate_path: "/post/page:num"
 
 
-url: "https://github.com/MoHee-PCH/test" # the base hostname & protocol for your site
+url: "https://github.com/MoHee-PCH/test/tree/gh-pages" # the base hostname & protocol for your site
 facebook_username: Jhon_Pang
 twitter_username: Jhon_Pang
 github_username:  MoHee-PCH
