@@ -1,0 +1,70 @@
+<div class="home">
+
+  <h1 class="page-heading">article list</h1>
+
+<!-- 文章列表 -->
+  <ul class="post-list">
+	<!--遍历所有文章-->
+    {% for post in site.posts %}
+      <li>
+
+      	<!-- style #1 -->
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+
+        <!-- style #2
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        -->
+      </li>
+    {% endfor %}
+  </ul>
+<!-- 订阅 -->
+  <h2>subscribe</h2>
+  <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<!--分页-->
+  <h2>paginator</h2>
+  <!--判断是否需要分页-->
+  {% if paginator.total_pages > 1 %}
+    {% for post in paginator.posts %}
+	    <a href="{{ post.url }}">{{ post.title }}</a>
+	{% endfor %}  
+    
+    <!--判断是否需要 上一页 -->
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
+    {% endif %}
+
+    <!--判断上一页是否有效-->
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="active">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    <!--下一页-->
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+    {% endif %}
+
+  {% endif %}
+	
+</div>
+
+<!-- 分类 -->
+<h2>class</h2>
+<div class='category'>
+	<ul>
+		{% for cat in site.categories %}
+			<li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>&nbsp;[{{ cat[1].size }}]</span></a></li>
+		{% endfor %}
+	</ul>
+</div>
+

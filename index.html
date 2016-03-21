@@ -1,73 +1,74 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">article list</h1>
-
-<!-- 文章列表 -->
-  <ul class="post-list">
-	<!--遍历所有文章-->
-    {% for post in site.posts %}
-      <li>
-
-      	<!-- style #1 -->
-        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-
-        <!-- style #2
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        -->
-      </li>
-    {% endfor %}
-  </ul>
-<!-- 订阅 -->
-  <h2>subscribe</h2>
-  <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-<!--分页-->
-  <h2>paginator</h2>
-  <!--判断是否需要分页-->
-  {% if paginator.total_pages > 1 %}
-    {% for post in paginator.posts %}
-	    <a href="{{ post.url }}">{{ post.title }}</a>
-	{% endfor %}  
+<style type="text/css">
+	.photo{ margin:auto 30%;}
+	.photo img{ 
+		width: 200px;
+		height: 200px;
+	}
+	.who{ 
+		margin-top:5%;
+		margin-left:-10%;
+		text-align:center;
+	}
+	.contact{margin-left: 25%;}
+	.contact ul li{
+		display: inline;
+		padding: 5%;
+	}
+</style>
+<div class="page-content">
     
-    <!--判断是否需要 上一页 -->
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
-    {% endif %}
+    <div class="photo">
+    	<img src="/downloads/pic/MJ.jpg" alt="头像" class="img-circle">
+    </div>
+    
+    <div class="who">
+    	<h2>MoHee</h2>
+	    <p>三人行必有吾师焉</p>
+	    <div>
+	   		<a href=""><span class="social social-facebook"></span></a>
+		</div>
+    </div>
 
-    <!--判断上一页是否有效-->
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="active">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
+    <div class="contact">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
 
-    <!--下一页-->
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
-    {% endif %}
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
 
-  {% endif %}
-	
+          {% if site.facebook_username %}
+          <li>
+            {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.sina_weibo %}
+          <li>
+            {% include icon-sina_weibo.html username=site.sina_weibo %}
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+      <div class="contact">
+      	<ul>
+      		<li><a href="#">略知一二</a></li>
+      		<li><a href="http://pangcunhong.deercv.com/?preview=1">毛遂自荐</a></li>
+      	</ul>
+      </div>
+    
+
+
 </div>
 
-<!-- 分类 -->
-<h2>class</h2>
-<div class='category'>
-	<ul>
-		{% for cat in site.categories %}
-			<li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>&nbsp;[{{ cat[1].size }}]</span></a></li>
-		{% endfor %}
-	</ul>
-</div>
