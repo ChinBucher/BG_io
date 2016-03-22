@@ -12,10 +12,19 @@ layout: default
 		margin-left:-10%;
 		text-align:center;
 	}
-	.contact{margin-left: 25%;}
+	.contact{
+		font-size: 1.2em;
+		font-style: bold;
+		text-decoration: none;
+	}
 	.contact ul li{
 		display: inline;
 		padding: 5%;
+	}
+	.contact .apart span{
+		height: 40px;
+		border-left: 2px solid #D3D3D3;
+		
 	}
 	.icon{ 
 		width: 40px;
@@ -36,38 +45,13 @@ layout: default
 		</div>
     </div>
 
-    <div class="contact">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-
-          {% if site.facebook_username %}
-          <li>
-            {% include icon-facebook.html username=site.facebook_username %}
-          </li>
-          {% endif %}
-
-          {% if site.sina_weibo %}
-          <li>
-            {% include icon-sina_weibo.html username=site.sina_weibo %}
-          </li>
-          {% endif %}
-
-        </ul>
-      </div>
 
       <div class="contact">
       	<ul>
-      		<li><a href="#">略知一二</a></li>
+      		<li><a href="#">管窥之见</a></li>
+      		<li class="apart"><span></span></li>
+      		<li><a href="#">胡言乱语</a></li>
+      		<li class="apart"><span></span></li>
       		<li><a href="http://pangcunhong.deercv.com/?preview=1">毛遂自荐</a></li>
       	</ul>
       </div>

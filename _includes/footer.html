@@ -1,10 +1,16 @@
 <style type="text/css">
 	.foot{ 
-		margin-left: 28%;
+		margin-left: 41%;
+		font-size: .6em;
 	}
+	.foot p{
+		padding: 1%;
+		margin-bottom: 1%;
+	}
+	.footer-col ul{margin-left: -8%;}
 	.footer-col ul li{ 
 		display: inline;
-		padding: 5%;
+		margin-left: 3%;
 	}
 </style>
 
@@ -13,13 +19,11 @@
   <div class="wrapper foot">
 
     <div class="footer-col-wrapper">
+ 
       <div class="footer-col footer-col-3">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-
+      	<p>{{ site.description }}</p>
         <ul class="social-media-list">
+          
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -44,20 +48,13 @@
           </li>
           {% endif %}
 
+          <li>
+          	<a href="{{ "{{ site.baseurl }}feed.xml" | prepend: site.baseurl }}"><span class="icon icon--rss">{% include icon-rss.svg %}</span></a>
+          </li>
         </ul>
+        
       </div>
 
-     
-      
-  	  
-
-      <div class="footer-col footer-col-3">
-      <!-- 订阅 -->
-      	
-        <p class="rss-subscribe">subscribe <a href="{{ "{{ site.baseurl }}feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-        <p>{{ site.description }}</p>
-      </div>
     </div>
 
   </div>
