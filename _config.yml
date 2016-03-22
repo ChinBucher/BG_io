@@ -29,6 +29,8 @@ url: "https://github.com/MoHee-PCH/test" # the base hostname & protocol for your
 url2: "https://github.com/MoHee-PCH/test/"
 url3: "/"
 url4: "https://github.com/MoHee-PCH/test/tree/gh-pages"
+github.url: "https://github.com/MoHee-PCH"
+github.url2: "https://github.com/MoHee-PCH/test"
 
 facebook_username: Jhon_Pang
 twitter_username: Jhon_Pang
