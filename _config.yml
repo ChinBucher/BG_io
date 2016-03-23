@@ -26,13 +26,14 @@ encoding: utf-8
 
 
 url: "https://github.com/MoHee-PCH/" # the base hostname & protocol for your site
-
+#sina_blog_url: "http://blog.sina.com.cn/u/3805305412"
 
 
 facebook_username: Jhon_Pang
 twitter_username: Jhon_Pang
 github_username:  MoHee-PCH
 sina_weibo: pangcunhong
+
 
 # Build settings
 markdown: kramdown

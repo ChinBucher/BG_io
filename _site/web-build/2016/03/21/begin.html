@@ -29,7 +29,7 @@
   <!--END Bootstrap-->
   
   <!--作用不明-->
-  <meta name="description" content="文章摘要            begin                      hello jekyll      You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to se...">
+  <meta name="description" content="">
 
 <!-- test -->
   <link href="/css/main.css" rel="stylesheet">
@@ -53,30 +53,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     
-      <a class="navbar-brand" href="/">庞存洪</a>
-
+      <a href="/index.html">
+      <img src="/downloads/logo.png" height="50px;">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">格物致知</a></li>
-        <li><a href="#">躬行践履</a></li>
-        <li><a href="#">见贤思齐</a></li>
-        <li><a href="#">温故知新</a></li>
+        <li><a href="/html/blog.html">学而时习之<span class="sr-only">(current)</span></a></li>
+        <li><a href="/html/learn.html">格物致知</a></li>
+        <li><a href="/html/code.html">躬行践履</a></li>
+        <li><a href="/html/teacher.html">见贤思齐</a></li>
+        <li><a href="/html/book.html">温故知新</a></li>
       </ul>
-      
+
+      <!--
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      
+      -->
+
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="about.html" | prepend: site.baseurl }}">about</a></li>
+      	<li><a href="html/about.html" | prepend: site.baseurl }}">about</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -88,62 +90,7 @@
     <div class="page-content">
       <div class="wrapper">
         <div>
-<!-- 文章摘要 -->
-<h2>文章摘要</h2>
-<ul>
-  
-    <li>
-      <a href="/web-build/2016/03/21/begin.html">begin</a>
-      <div>
-<!-- 文章摘要 -->
-<h2>文章摘要</h2>
-<ul>
-  
-    <li>
-      <a href="/web-build/2016/03/21/begin.html">begin</a>
-      
-    </li>
-  
-    <li>
-      <a href="/jekyll/update/2015/12/31/welcome-to-jekyll.html">hello jekyll</a>
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-
-    </li>
-  
-    <li>
-      <a href="/jekyll/update/2015/12/31/welcome-to-jekyll.html">hello jekyll</a>
-      You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-    </li>
-  
-</ul>
-<!-- END -->
-
-
-    </li>
-  
-    <li>
-      <a href="/jekyll/update/2015/12/31/welcome-to-jekyll.html">hello jekyll</a>
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-
-    </li>
-  
-    <li>
-      <a href="/jekyll/update/2015/12/31/welcome-to-jekyll.html">hello jekyll</a>
-      You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-    </li>
-  
-</ul>
-<!-- END -->
 
 <h1> begin
 <p>begin, Cilick below to go to index:</p>
@@ -166,6 +113,7 @@
 		padding: 1%;
 		margin-bottom: 1%;
 	}
+	.footer-col{margin-left: 5%;}
 	.footer-col ul{margin-left: -8%;}
 	.footer-col ul li{ 
 		display: inline;

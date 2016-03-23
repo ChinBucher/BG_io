@@ -6,69 +6,14 @@
 </description>
     <link>https://github.com/MoHee-PCH///</link>
     <atom:link href="https://github.com/MoHee-PCH///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Mar 2016 17:29:38 +0800</pubDate>
-    <lastBuildDate>Wed, 23 Mar 2016 17:29:38 +0800</lastBuildDate>
+    <pubDate>Wed, 23 Mar 2016 21:23:49 +0800</pubDate>
+    <lastBuildDate>Wed, 23 Mar 2016 21:23:49 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>begin</title>
         <description>&lt;div&gt;
-&lt;!-- 文章摘要 --&gt;
-&lt;h2&gt;文章摘要&lt;/h2&gt;
-&lt;ul&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/web-build/2016/03/21/begin.html&quot;&gt;begin&lt;/a&gt;
-      &lt;div&gt;
-&lt;!-- 文章摘要 --&gt;
-&lt;h2&gt;文章摘要&lt;/h2&gt;
-&lt;ul&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/web-build/2016/03/21/begin.html&quot;&gt;begin&lt;/a&gt;
-      
-    &lt;/li&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/jekyll/update/2015/12/31/welcome-to-jekyll.html&quot;&gt;hello jekyll&lt;/a&gt;
-      &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
-
-    &lt;/li&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/jekyll/update/2015/12/31/welcome-to-jekyll.html&quot;&gt;hello jekyll&lt;/a&gt;
-      You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-    &lt;/li&gt;
-  
-&lt;/ul&gt;
-&lt;!-- END --&gt;
-
-
-    &lt;/li&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/jekyll/update/2015/12/31/welcome-to-jekyll.html&quot;&gt;hello jekyll&lt;/a&gt;
-      &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-
-    &lt;/li&gt;
-  
-    &lt;li&gt;
-      &lt;a href=&quot;/jekyll/update/2015/12/31/welcome-to-jekyll.html&quot;&gt;hello jekyll&lt;/a&gt;
-      You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-    &lt;/li&gt;
-  
-&lt;/ul&gt;
-&lt;!-- END --&gt;
 
 &lt;h1&gt; begin
 &lt;p&gt;begin, Cilick below to go to index:&lt;/p&gt;

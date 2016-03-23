@@ -1,18 +1,21 @@
 ---
-layout: default
+layout: default2
 ---
 <style type="text/css">
-	.photo{ margin:auto 30%;}
+	ul li:hover{text-decoration: none;}
+	.photo{ margin:auto 36%;}
 	.photo img{ 
 		width: 200px;
 		height: 200px;
 	}
 	.who{ 
 		margin-top:5%;
-		margin-left:-10%;
 		text-align:center;
 	}
+	.who img{ height: 50px; }
+	.who p{margin-top: 2%;}
 	.contact{
+		margin-left: 6%;
 		font-size: 1.2em;
 		font-family: fantasy;
 		text-decoration: none;
@@ -38,7 +41,7 @@ layout: default
     </div>
     
     <div class="who">
-    	<h2>MoHee</h2>
+    	<img src="{{ site.baseurl }}downloads/logo.png">
 	    <p>三人行必有吾师焉</p>
 	    <div>
 	   		<a href=""><span class="social social-facebook"></span></a>
@@ -48,9 +51,9 @@ layout: default
 
       <div class="contact">
       	<ul>
-      		<li><a href="#">管窥之见</a></li>
+      		<li><a href="{{ site.baseurl }}html/blog.html">管窥之见</a></li>
       		<li class="apart"><span></span></li>
-      		<li><a href="#">胡言乱语</a></li>
+      		<li><a href="{{ site.baseurl }}html/nothing.html">胡言乱语</a></li>
       		<li class="apart"><span></span></li>
       		<li><a href="http://pangcunhong.deercv.com/?preview=1">毛遂自荐</a></li>
       	</ul>
