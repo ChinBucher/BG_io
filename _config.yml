@@ -16,6 +16,8 @@ baseurl: / # the subpath of your site, e.g. /blog
 #BASE_PATH: /_posts
 #字符编码
 encoding: utf-8
+#固定连接
+permalink: /blog/:year/:month/:title.html
 
 #分页
 #gems: [jekyll-paginate]
