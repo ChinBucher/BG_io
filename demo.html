@@ -63,6 +63,26 @@ title: About me
 	
 </div>
 
+<!-- 分类  -->
+<div class="categories">
+	<h2>categories</h2>
+	<!--遍历类别-->
+	{% for category in site.categories %}
+	<!--类名-->
+	<h3>{{ category | first }}</h3>
+	<!--每个分类size->
+	</span>{{ category | last | size }}</span>
+	-->
+	<!--当前分类的文章目录-->
+	<ul class="arc-list">
+	    {% for post in category.last %}
+	        <li><span>{{ post.date | date:"%d/%m/%Y"}}</span>&nbsp; &raquo; &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
+	{% endfor %}
+</div>
+<!--END-->
+
 <!-- 分类 -->
 <h2>class</h2>
 <div class='category'>

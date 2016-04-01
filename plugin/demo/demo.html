@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>GBin1.com Tag Cloud Demo</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tagsphere.min.js"></script>
+    <script type="text/javascript">
+	$(function(){
+	    $('#ts1').tagcloud({centrex:250, centrey:250, init_motion_x:10, init_motion_y:10});
+	});
+    </script>
+
+    <style type="text/css">
+	body {font-family:arial, sans-serif; background: #333; color: #fff}
+	
+	#ts1 li a{
+	    text-decoration:none;
+	    color:white;
+	}
+	#ts1{
+		border: 5px solid #555;
+	}
+	ul {list-style-type:none;}
+	
+	h1{
+		padding: 15px;
+	}
+</style>
+
+</head>
+<body>
+
+<h1>GBin1.com Tag Cloud Demo</h1>
+
+<div id="ts1" style="width:500px; height:500px; background-color:#000;">
+    <ul>
+	<li><a href="http://www.gbin1.com/technology/html" style="color:#f00;" rel="20">HTML</a></li>
+	<li><a href="http://www.gbin1.com/technology/css" rel="15">CSS</a></li>
+	<li><a href="http://www.gbin1.com/technology/javascript" rel="10">Javascript</a></li>
+	<li><a href="http://www.gbin1.com/technology/jquery" rel="5">jQuery</a></li>
+	<li><a href="http://www.gbin1.com/technology/jquerynews" rel="1">jQuery plugin</a></li>
+	<li><a href="http://www.gbin1.com/technology/jquerytutorial" rel="5">jQuery tutorial</a></li>
+	<li><a href="http://www.gbin1.com/technology/jqueryhowto" rel="10">jQuery howto</a></li>
+	<li><a href="http://www.gbin1.com/technology/jqueryplugins" rel="15">jQuery plugins</a></li>
+	<li><a href="http://www.gbin1.com/technology/jquerymobile" style="color:#f00" rel="20">jQuery mobile</a></li>
+	<li><a href="http://www.gbin1.com/technology/javautilities" rel="15">java</a></li>
+	<li><a href="http://www.gbin1.com/technology/seo" rel="10">SEO</a></li>
+	<li><a href="http://www.gbin1.com/technology/onlinequiz" rel="5">Quiz</a></li>
+	<li><a href="http://www.gbin1.com/internet/news" rel="1">News</a></li>
+	<li><a href="http://www.gbin1.com/internet/people" rel="5">People</a></li>
+	<li><a href="http://www.gbin1.com/internet/mobile" rel="10">Mobile</a></li>
+	<li><a href="http://www.gbin1.com/tools/photoshop" rel="15">Photoshop</a></li>
+	<li><a href="http://www.gbin1.com/tools/design" style="color:#f00" rel="20">Design</a></li>
+    </ul>
+</div>
+</body>
+</html>

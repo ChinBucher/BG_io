@@ -3,6 +3,13 @@
 
   {% include head.html %}
 
+  <!--3D云-->
+		<script type="text/javascript">
+			$(function(){
+			    $('#ts1').tagcloud({centrex:140, centrey:140, init_motion_x:10, init_motion_y:10});
+			});
+	    </script>
+	    <!--END-->
   <body>
 
     {% include header.html %}
@@ -16,6 +23,11 @@
     {% include footer.html %}
 
   </body>
+  	
   <script src="{{site.github.url}}/js/jquery.min.js"></script>
   <script src="{{site.github.url}}/js/bootstrap.min.js"></script>
+	  <!--3D云-->
+	  	<script src="{{site.github.url}}/js/jquery.mousewheel.min.js"></script>
+	    <script src="{{site.github.url}}/js/jquery.tagsphere.min.js"></script>
+    <!--END-->
 </html>
