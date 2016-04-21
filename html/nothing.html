@@ -1,1 +1,17 @@
+---
+layout: default
+title: self
+---
 <h1>Nothing</h1>
+	<div>
+		<h3>文章摘要</h3>
+		<ul>
+		  {% for post in site.self %}
+		    <li>
+		      <span>{{ post.date | date_to_string }}</span>&nbsp; &raquo; &nbsp;<a href="{{site.github.url}}{{ post.url }}">{{ post.title }}</a>
+		      {{ post.excerpt }}
+		    </li>
+		  {% endfor %}
+		</ul>
+		<!-- END -->
+	</div>
