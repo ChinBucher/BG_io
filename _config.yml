@@ -7,9 +7,10 @@
 
 # Site settings
 title: 庞存洪
+user: Mohee
 email: pangcunhong@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  MoHee © 2016 
+   © 2016 
 
 #网站的根路径
 baseurl: / # the subpath of your site, e.g. /blog

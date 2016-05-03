@@ -2,16 +2,25 @@
 layout: default
 title: about
 ---
+<div class="self">
+	<h3>email</h3>
+	<ul>
+		<li><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">pangcunhong@gmail.com</a></li>
+		<li><a target="_blank" href="https://snt147.mail.live.com/default.aspx?id=64855&owa=1&owasuffix=owa%2f">pangcunhong@outlook.com</a></li>
+		<li><a target="_blank" href="https://mail.qq.com/cgi-bin/frame_html?sid=QkM-23vqqltzEBpN&r=349fbe9250aebe3ab7623b96f918595b">pcngcunhong@qq.com</a></li>
+	</ul>
+</div>
 <!-- 文章摘要 -->
 	<div>
 		<h2>文章摘要</h2>
 		<ul>
 		  {% for post in site.self %}
 		    <li>
-		      <span>{{ post.date | date_to_string }}</span>&nbsp; &raquo; &nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
-		      <div>{{ post.excerpt }}</div>
+		      <span>{{ post.date | date_to_string }}</span>&nbsp; &raquo; &nbsp;<a href="{{site.github.url}}{{ post.url }}">{{ post.title }}</a>
+		      {{ post.excerpt }}
 		    </li>
 		  {% endfor %}
 		</ul>
+		<!-- END -->
 	</div>
 	<!-- END -->
