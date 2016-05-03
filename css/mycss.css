@@ -1,17 +1,17 @@
-.sites, .coding, .teachers, .books, .todo{ 
+.sites, .git_lesson, .coding, .teachers, .books, .todo{ 
 	padding: 10px;
 	border: 1px solid #f2f2f2;
 	box-shadow: 2px 2px 5px #8B3E2F;
 }
 
-.teachers, .books, .todo{ 
+.git_lesson, .teachers, .books, .todo{ 
 	width: 330px;
 	height: 300px;
 }
 
 .coding{height: 420px;}
-.books{float: left;}
-.todo{float: right;}
+.teachers, .books{float: left;}
+.git_lesson, .todo{float: right;}
 /*
 a:link    {color:blue;}
 a:visited {color:blue;}
