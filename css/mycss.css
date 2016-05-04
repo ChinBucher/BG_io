@@ -1,4 +1,4 @@
-.sites, .git_lesson, .coding, .teachers, .books, .todo{ 
+.sites, .interview, .git_lesson, .coding, .teachers, .books, .todo{ 
 	padding: 10px;
 	border: 1px solid #f2f2f2;
 	box-shadow: 2px 2px 5px #8B3E2F;
@@ -8,10 +8,10 @@
 	width: 330px;
 	height: 300px;
 }
-
+.sites, .interview{ width: 300px; }
 .coding{height: 420px;}
-.teachers, .books{float: left;}
-.git_lesson, .todo{float: right;}
+.teachers, .books, .sites{float: left;}
+.git_lesson, .todo, .interview{float: right;}
 /*
 a:link    {color:blue;}
 a:visited {color:blue;}
